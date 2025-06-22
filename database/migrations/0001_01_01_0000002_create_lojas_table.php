@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('endereco');
             $table->string('bairro');
             $table->string('cidade');
-         
+            $table->string('estado');
+            $table->string('cep');
             $table->timestamps();
         });
     }
