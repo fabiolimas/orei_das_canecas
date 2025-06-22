@@ -99,8 +99,8 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/catalogo">Catálogo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/categorias">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('produto.catalogo')}}">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('produto.categorias')}}">Categorias</a></li>
                     <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
                 </ul>

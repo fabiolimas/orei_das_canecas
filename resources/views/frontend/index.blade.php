@@ -3,6 +3,15 @@
 @section('title', 'O Rei das Canecas - Personalize sua ideia!')
 
 @section('content')
+<style>
+     .p-3.border.rounded.text-center.shadow-sm, .p-4.border.rounded-4.h-100, .card.h-100.shadow-sm.position-relative.border-0.rounded-4, .card.h-100.shadow-sm.border-0.rounded-4{
+        transition: .2s;
+     }
+    .p-3.border.rounded.text-center.shadow-sm:hover, .p-4.border.rounded-4.h-100:hover, .card.h-100.shadow-sm.position-relative.border-0.rounded-4:hover,.card.h-100.shadow-sm.border-0.rounded-4:hover {
+    transform: translateY(-5px);
+    color:red;
+}
+</style>
 
     <!-- Banner principal -->
     <section class="bg-light py-3">
@@ -66,7 +75,7 @@
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="p-3 border rounded text-center shadow-sm">
-                    <div class="fs-2 text-secondary"><i class="bi bi-bag-fill"></i></div>
+                    <div class="fs-2 text-secondary "><i class="bi bi-bag-fill"></i></div>
                     <p class="fw-semibold mt-2">Corporativas</p>
                 </div>
             </div>
