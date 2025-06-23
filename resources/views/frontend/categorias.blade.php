@@ -28,36 +28,41 @@ color:red
     </style>
     <div class="fluid-container mt-4">
 
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h4 class="fw-bold">Nossas Categorias</h4>
-                <p class="mb-2">Explore nossa ampla variedade de produtos organizados por categoria. Encontre exatamente o
-                    que você procura!</p>
+       
+        <section class="bg-white py-5 px-3">
+  <div class="text-center mb-5">
+    <h2 class="h3 fw-bold text-dark">Nossas Categorias</h2>
+    <p class="text-muted">
+      Explore nossa ampla variedade de produtos organizados por categoria. Encontre exatamente o que você procura!
+    </p>
+  </div>
 
-            </div>
+  <div class="row g-4">
+    <!-- Categoria 1 -->
+    @foreach($categorias as $categoria)
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="position-relative">
+          <span class="position-absolute top-0 start-0 bg-danger text-white fw-bold small px-2 py-1 rounded-end">Destaque</span>
+          <span class="position-absolute top-0 end-0 text-muted fs-5 p-2">&#9749;</span>
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            IMG
+          </div>
         </div>
-
-
-        <section class="py-5" style="background: linear-gradient(to right, #fff6f1, #fffefb);">
-            <div class="container  d-flex">
-                <div class="row">
-
-
-                    @foreach ($categorias as $categoria)
-                        <div class="col-md-4 mb-3">
-                            <div class="card border-primary" >
-                                <img src="{{ asset('assets/images/default.svg') }}" class="card-img-top rounded-top-4"
-                                    alt="{{ $categoria->nome }}">
-                                <div class="card-body">
-                                    <h5 class="card-title text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{{ $categoria->nome }}</h5>
-                                    <p class="card-text">Canecas únicas com design personalizado</p>
-                                    <a href="#" class="text-left">Ver produtos</a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </section>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{$categoria->nome}}</h5>
+          <span class="badge bg-warning text-dark fw-bold mb-2">45 produtos</span>
+          <p class="card-text text-muted">Canecas únicas com seu design personalizado</p>
+          <a href="#" class="text-decoration-none text-primary small">Ver produtos &rarr;</a>
+          <div class="text-warning mt-2">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+        </div>
+      </div>
+    </div>
+@endforeach
+    
+  </div>
+</section>
     </div>
 @endsection

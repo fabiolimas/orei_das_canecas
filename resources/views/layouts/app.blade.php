@@ -101,8 +101,8 @@
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('produto.catalogo')}}">Catálogo</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('produto.categorias')}}">Categorias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('sobre')}}">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('contato')}}">Contato</a></li>
                 </ul>
             </div>
 

@@ -16,5 +16,10 @@ Route::get('add-cart', function(){
 })->name('carrinho.adicionar');
 Route::get('/catalogo', [ProdutoController::class , 'catalogo'])->name('produto.catalogo');
 Route::get('/categorias', [ProdutoController::class , 'categorias'])->name('produto.categorias');
-
+Route::get('sobre', function(){
+    return view('frontend.sobre');
+})->name('sobre');
+Route::get('contato', function(){
+    return view('frontend.contato');
+})->name('contato');
 
